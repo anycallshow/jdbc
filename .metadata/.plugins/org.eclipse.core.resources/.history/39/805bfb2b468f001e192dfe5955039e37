@@ -1,0 +1,14 @@
+package edu.kh.jdbc.main.view;
+
+import java.util.Scanner;
+
+import edu.kh.jdbc.member.model.vo.Member;
+
+public class MainView { // 메인 메뉴(메뉴 선택용/입력 화면)
+	
+	private Scanner sc = new Scanner(System.in);
+	private Member loginMember = null;
+	
+	
+
+}

@@ -1,0 +1,7 @@
+package edu.kh.jdbc.common;
+
+public class CreateXML {
+	
+	// XML(eXtensible Markup Language) : 단순화된 데이터 기술 형식
+
+}

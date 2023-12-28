@@ -1,0 +1,33 @@
+package edu.kh.jdbc.member.model.vo;
+
+import java.sql.Date;
+
+// VO(Value Object) : 값을 저장하는 용도의 객체
+// -> 여러 값을 하나의 객체에 저장하여 매개변수 전달, 반환, 컬렉션 등에 이용할 수 있음
+
+public class Member {
+
+	// 필드
+	private int memberNo;
+	private String memberId;
+	private String memberPw;
+	private String memberName;
+	private char memberGender;
+	private Date enrollDate;
+	private char secessingFlag;
+	
+	// 기본 생성자
+	public Member() {}
+	
+	// 회원 가입용 생성자
+	public Member(int memberNo, String memberId, String memberPw, String memberName, char memberGender) {
+		this.memberNo = memberNo;
+		this.memberId = memberId;
+		this.memberPw = memberPw;
+		this.memberName = memberName;
+		this.memberGender = memberGender;
+	}
+	
+	
+	
+}

@@ -1,0 +1,20 @@
+package edu.kh.jdbc.model.vo;
+
+import java.sql.Date;
+
+public class Employee {
+	private int empId; //사번
+	private String empName;
+	private String empNo;
+	private String email;
+	private String phone;
+	private String deptCode;
+	private String jobCode;
+	private String salLevel;
+	private int salary;
+	private double bonus;
+	private int managerId;
+	private Date hireDate;
+	private Date entDate;
+	private char entYn;
+}

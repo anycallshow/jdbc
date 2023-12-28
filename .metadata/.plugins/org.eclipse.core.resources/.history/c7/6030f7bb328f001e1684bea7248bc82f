@@ -1,0 +1,15 @@
+package edu.kh.jdbc.common;
+
+public class JDBCTemplate {
+	
+	/* DB연결, JDBC 자원 반환, 트랜잭션 제어
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * */
+
+}

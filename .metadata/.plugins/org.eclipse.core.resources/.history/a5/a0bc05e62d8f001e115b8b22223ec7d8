@@ -1,0 +1,10 @@
+package edu.kh.jdbc.common;
+
+public class CreateXML {
+	
+	// XML(Extensible Markup Language) : 단순화된 데이터 기술 형식
+	
+	// XML을 사용하려는 이유
+	// - DB 연결, SQL 같이 수정이 빈번한 내용을
+	//   코드에 직접 작성하면 좋지 않음
+}

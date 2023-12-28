@@ -1,0 +1,18 @@
+package edu.kh.jdbc.ex1;
+
+import java.sql.Connection;
+
+public class JDBCExample1 {
+	public static void main(String[] args) {
+		
+		// JDBC : java가 DB와 연결할 수 있게 해주는 java API
+		
+		// [1단계] : JDBC 객체 참조 변수 선언 (java.sql 패키지)
+		
+		Connection conn = null;
+		// DB 연결 정보를 담은 객체
+		// -> Java와 DB 사이를 연결해주는 일종의 통로
+		
+		
+	}
+}

@@ -1,0 +1,60 @@
+package edu.kh.jdbc.board.model.vo;
+
+import java.sql.Date;
+
+public class Reply {
+	
+	private int replyNo;
+	private String replyContent;
+	private Date createDate;
+	private int memberNo;
+	private int boardNo;
+	private String memberName;
+	
+	public Reply() {}
+
+	
+	}
+
+	public int getReplyNo() {
+		return replyNo;
+	}
+
+	public void setReplyNo(int replyNo) {
+		this.replyNo = replyNo;
+	}
+
+	public String getReplyContent() {
+		return replyContent;
+	}
+
+	public void setReplyContent(String replyContent) {
+		this.replyContent = replyContent;
+	}
+
+	public Date getReplyDate() {
+		return createDate;
+	}
+
+	public void setReplyDate(Date replyDate) {
+		this.createDate = replyDate;
+	}
+
+	public String getMemberName() {
+		return memberName;
+	}
+
+	public void setMemberName(String memberName) {
+		this.memberName = memberName;
+	}
+
+	@Override
+	public String toString() {
+		return "Reply [replyNo=" + replyNo + ", replyContent=" + replyContent + ", replyDate=" + createDate
+				+ ", memberName=" + memberName + "]";
+	}
+	
+	
+	
+
+}

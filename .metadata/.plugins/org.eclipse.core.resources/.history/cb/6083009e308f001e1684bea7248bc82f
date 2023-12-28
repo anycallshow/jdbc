@@ -1,0 +1,11 @@
+package edu.kh.jdbc.common;
+
+public class LoadXML {
+	
+	public static void main(String[] args) {
+		
+		// 외부 XML 파일 읽어오기
+	}
+
+
+}

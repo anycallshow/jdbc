@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Member Service SQL</comment>
+	
+	<!-- 회원가입 -->
+	<entry key = "signUp">
+		INSERT INTO MEMBER
+		VALUES( SEQ_MEMBER_NO.NEXTVAL,?,?,?,?,DEFAULT,DEFAULT)
+	</entry>
+	<entry key = "login">
+		SELECT MEMBER_NO, MEMBER_ID, MEMBER_NM, MEMBER_GENDER, ENROLL_DATE
+		FROM MEMBER
+		WHERE MEMBER_ID = ?
+		AND MEMBER_PW = ?
+		AND SECESSION_FL ='N'
+	</entry>
+	
+	
+</properties>

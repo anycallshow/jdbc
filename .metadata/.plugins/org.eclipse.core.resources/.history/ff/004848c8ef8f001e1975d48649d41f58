@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Member Service SQL</comment>
+	
+	<!-- 회원가입 -->
+	<entry key = "signUp">
+		INSERT INTO MEMBER
+		VALUES( SEQ_MEMBER_NO.NEXTVAL,?,?,?,?,DEFAULT,DEFAULT)
+	</entry>
+</properties>

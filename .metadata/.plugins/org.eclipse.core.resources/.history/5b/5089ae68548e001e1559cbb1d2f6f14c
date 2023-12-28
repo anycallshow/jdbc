@@ -1,0 +1,58 @@
+package edu.kh.jdbc.ex1;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class JDBCExample1 {
+	public static void main(String[] args) {
+		
+		// JDBC : Java가 DB와 연결할 수 있게 해주는 Java API
+		
+		// [1단계] : JDBC 객체 참조 변수 선언 (java.sql 패키지)
+		
+		Connection conn = null;
+		// DB 연결 정보를 담은 객체
+		// -> Java와 DB 사이를 연결해주는 일종의 통로
+		
+		Statement stmt = null;
+		// Connection 객체를 통해
+		// Java에서 작성된 SQL을 DB로 전달하여 수행한 후
+		// 결과를 반환 받아 다시 Java로 돌아오는 역할의 객체
+		
+		ResultSet rs = null;
+		// SELECT절의 성공 시 반환되는
+		// 결과 행의 집합(Result Set)을 나타내는 객체
+		
+		
+		try {
+			// [2단계] 참조변수에 알맞은 객체 대입하기
+			
+			// 1. DB연결에 필요한 Oracle JDBC Driver 메모리 로드하기
+			// --> Oracle JDBC Driver가 어디에 있는지만 알려주면 알아서 메모리 로드
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+			// ClassNotFoundException 발생 가능성이 있음
+			
+			// 2. 연결 정보를 담은 Connection을 생성
+			//    (이때, DriverManager 객체가 필요함)
+			//    DriverManager : JDBC 드라이버를 통해 Connection 객체를 만드는 역할
+			
+			String type = "jdbc:oracle:thin:@" ; // JDBC드라이버가 thin 타입
+			
+			String ip = "localhost"; // DB 서버 컴퓨터 IP 
+			// localhost == 127.0.0.1
+			
+			conn = DriverManager.getConnection(type);
+			
+			
+		}catch(SQLException e) {
+			// SQLException : DB 연결관련 예외의 최상의 부모
+			e.printStackTrace();
+		}catch(ClassNotFoundException e) {
+			System.out.println("OJDBC 라이브러리 미등록 또는 경로 오타");
+			e.printStackTrace();
+		}
+	}
+}

@@ -1,0 +1,37 @@
+package edu.kh.jdbc.main.view;
+
+import java.util.Scanner;
+
+import edu.kh.jdbc.member.model.vo.Member;
+import edu.kh.jdbc.member.view.MemberView;
+
+public class MainView { // 메인 메뉴(메뉴 선택용/입력 화면)
+	
+	private Scanner sc = new Scanner(System.in);
+	
+	// 로그인한 회원의 정보가 저장된 객체를 참조할 변수
+	private Member loginMember = null;
+	
+	// 회원 관련 기능 화면을 모아둔 객체를 참조할 변수
+	private MemberView memberView = null;
+	
+	/**
+	 * 메인 메뉴 출력 메소드
+	 */
+	public void displayMenu() {
+		
+		int menuNum = -1; // 메뉴 선택 값 저장 변수
+		// 초기 값을 -1로 지정하여, 반복문 첫 바퀴에서 오류 발생 시 종료되는 것을 방지
+		
+		do {
+			
+			
+			
+		}while(menuNum != 0);
+		
+		
+	}
+	
+	
+
+}

@@ -1,0 +1,20 @@
+package edu.kh.jdbc.common;
+
+public class JDBCTemplate {
+	
+	/* DB연결, JDBC 자원 반환, 트랜잭션 제어
+	 * 반복적으로 사용되는 JDBC 관련 코드를 모아둔 클래스
+	 * 
+	 * getConnection() 메소드
+	 * 
+	 * close( Connection | Statement | ResultSet) 메소드
+	 *   --> PreparedStatement는 Statement의 자식이므로
+	 *   	 매개변수 다형성으로 한번에 처리
+	 * 
+	 * commit(Connection)
+	 * rollback(Connection)
+	 * 
+	 * 
+	 * 
+	 * */
+}

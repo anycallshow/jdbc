@@ -1,0 +1,32 @@
+package edu.kh.jdbc.common;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.InvalidPropertiesFormatException;
+import java.util.Properties;
+
+public class LoadXML {
+	
+	public static void main(String[] args) {
+		
+		// 외부 XML 파일 읽어오기(Properties 사용)
+		
+		Properties prop = new Properties();
+		// Key, Value가 String으로 제한된 Map
+		
+		try {
+			prop.loadFromXML(new FileInputStream("driver.xml"));
+			
+			// Property : 속성(데이터)
+			// prop.getProperty("driver") : XML에서 얻어온 값 중
+			
+			System.out.println("driver : " + prop.getProperty("driver"));
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		} 
+		
+		
+	}
+}

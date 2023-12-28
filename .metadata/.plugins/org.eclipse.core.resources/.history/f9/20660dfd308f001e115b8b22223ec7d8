@@ -1,0 +1,22 @@
+package edu.kh.jdbc.common;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+
+public class LoadXML {
+	public static void main(String[] args) {
+		
+		// 외부 XML 파일 읽어오기(Properties 사용)
+		
+		Properties prop = new Properties();
+		// key, Value가 String으로 제한된 Map
+		
+		try {
+			prop.loadFromXML(new FileInputStream("driver.xml"));
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}
