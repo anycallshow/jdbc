@@ -1,9 +1,0 @@
-package edu.kh.jdbc.run;
-
-public class EmployeeRun {
-
-	public static void main(String[] args) {
-
-	}
-
-}

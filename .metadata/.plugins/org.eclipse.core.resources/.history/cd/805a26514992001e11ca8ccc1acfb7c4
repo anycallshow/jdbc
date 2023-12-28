@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
-<properties>
-	<comment>board Service SQL</comment>
-
-	<!-- 게시글 목록 조회 + 댓글 개수 -->
-
-</properties>
